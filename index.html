@@ -40,40 +40,40 @@
       object-fit: cover;
       border-radius: 16px;
     }
-.videosSwiper {
-  max-width: 900px;
-  margin: 0 auto;
-}
+    .videosSwiper {
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-.videosSwiper .swiper-slide {
-  width: 280px; /* controla quantos aparecem */
-  height: 420px;
-  display: flex;
-  justify-content: center;
-  transition: 0.3s;
-  opacity: 0.4;
-  transform: scale(0.85);
-}
+    .videosSwiper .swiper-slide {
+      width: 280px; /* controla quantos aparecem */
+      height: 420px;
+      display: flex;
+      justify-content: center;
+      transition: 0.3s;
+      opacity: 0.4;
+      transform: scale(0.85);
+    }
 
-.videosSwiper video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
-}
+    .videosSwiper video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
 
-/* destaque no centro */
-.videosSwiper .swiper-slide-active {
-  opacity: 1;
-  transform: scale(1);
-}
+    /* destaque no centro */
+    .videosSwiper .swiper-slide-active {
+      opacity: 1;
+      transform: scale(1);
+    }
 
-/* laterais */
-.videosSwiper .swiper-slide-next,
-.videosSwiper .swiper-slide-prev {
-  opacity: 0.7;
-  transform: scale(0.9);
-}
+    /* laterais */
+    .videosSwiper .swiper-slide-next,
+    .videosSwiper .swiper-slide-prev {
+      opacity: 0.7;
+      transform: scale(0.9);
+    }
   </style>
   <body>
     <div class="app">
@@ -161,33 +161,28 @@
           Atendemos todos os tipos de eventos com qualidade e profissionalismo
           👇
         </p>
-<div class="filter-buttons">
-  <button onclick="filtrar('todos')">Todos</button>
-  <button onclick="filtrar('eventos-sociais')">Eventos</button>
-  <button onclick="filtrar('gastronomia')">Gastronomia</button>
-  <button onclick="filtrar('eventos-tematicos')">Temáticos</button>
-</div>
-        <div class="services-grid" id="servicesContainer">
-         
+        <div class="filter-buttons">
+          <button onclick="filtrar('todos')">Todos</button>
+          <button onclick="filtrar('eventos-sociais')">Eventos</button>
+          <button onclick="filtrar('gastronomia')">Gastronomia</button>
+          <button onclick="filtrar('eventos-tematicos')">Temáticos</button>
         </div>
+        <div class="services-grid" id="servicesContainer"></div>
       </section>
 
-<section class="parallax">
-  <div class="parallax-overlay">
-    <h2>Transformamos seu evento em algo inesquecível 🎉</h2>
-    <p>
-      Qualidade, sabor e experiência que marcam momentos especiais.
-    </p>
+      <section class="parallax">
+        <div class="parallax-overlay">
+          <h2>Transformamos seu evento em algo inesquecível 🎉</h2>
+          <p>Qualidade, sabor e experiência que marcam momentos especiais.</p>
 
-    <a
-      href="https://wa.me/5516981231479?text=Olá!%20Quero%20um%20orçamento%20para%20evento"
-      class="btn"
-    >
-      Pedir orçamento
-    </a>
-  </div>
-</section>
-
+          <a
+            href="https://wa.me/5516981231479?text=Olá!%20Quero%20um%20orçamento%20para%20evento"
+            class="btn"
+          >
+            Pedir orçamento
+          </a>
+        </div>
+      </section>
 
       <!-- DEPOIMENTOS -->
       <section id="depoimentos" class="section">
@@ -202,44 +197,72 @@
             <div class="swiper-slide">
               <video
                 src="./assets/videos/1.mp4"
-                autoplay muted loop playsinline preload="auto"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
               ></video>
             </div>
 
             <div class="swiper-slide">
               <video
                 src="./assets/videos/2.mp4"
-                autoplay muted loop playsinline preload="auto"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
                 src="./assets/videos/5.mp4"
-                autoplay muted loop playsinline preload="auto"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
                 src="./assets/videos/6.mp4"
-                autoplay muted loop playsinline preload="auto"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
                 src="./assets/videos/7.mp4"
-               autoplay muted loop playsinline preload="auto"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
                 src="./assets/videos/8.mp4"
-             autoplay muted loop playsinline preload="auto"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
                 src="./assets/videos/9.mp4"
-                autoplay muted loop playsinline preload="auto"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
               ></video>
             </div>
           </div>
@@ -365,11 +388,10 @@
       <img class="lightbox-content" id="lightbox-img" />
     </div>
 
-<div id="dynamicModal" class="modal">
-  <div class="modal-content" id="modalContent"></div>
-</div>
-  
-</div>
+    <div id="dynamicModal" class="modal">
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+
     <script src="./assets/JS/scripts.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -394,30 +416,32 @@
         },
       });
 
-var videosSwiper = new Swiper(".videosSwiper", {
-  slidesPerView: 2, 
-  spaceBetween: 15,
-  centeredSlides: true,
-  loop: true,
+      var videosSwiper = new Swiper(".videosSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        centeredSlides: true,
+        loop: true,
 
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
 
-  pagination: {
-    el: ".videosSwiper .swiper-pagination",
-    clickable: true,
-  },
+        pagination: {
+          el: ".videosSwiper .swiper-pagination",
+          clickable: true,
+        },
 
-  on: {
-    init: function () {
-      document.querySelectorAll(".videosSwiper video").forEach((video) => {
-        video.play();
+        on: {
+          init: function () {
+            document
+              .querySelectorAll(".videosSwiper video")
+              .forEach((video) => {
+                video.play();
+              });
+          },
+        },
       });
-    },
-  },
-});
     </script>
   </body>
 </html>
