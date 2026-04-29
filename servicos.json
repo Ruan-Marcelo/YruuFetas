@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "icon": "💍",
+    "title": "Casamentos",
+    "description": "Buffet completo para seu grande dia",
+    "category": "eventos-sociais",
+    "image": "/assets/images/services/casamentos.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Casamentos 💍",
+      "text": "Oferecemos buffet completo, decoração e equipe especializada.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento de casamento"
+    }
+  },
+  {
+    "id": 2,
+    "icon": "👑",
+    "title": "15 Anos",
+    "description": "Eventos elegantes e inesquecíveis",
+    "category": "eventos-sociais",
+    "image": "/assets/images/services/15-anos.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Festa de 15 Anos 👑",
+      "text": "Eventos personalizados com cardápio exclusivo e equipe completa.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento de 15 anos"
+    }
+  },
+  {
+    "id": 3,
+    "icon": "🍝",
+    "title": "Macarrão ao Vivo",
+    "description": "Experiência gastronômica na hora",
+    "category": "gastronomia",
+    "image": "/assets/images/services/macarrao.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Macarrão ao Vivo 🍝",
+      "text": "Experiência gastronômica ao vivo com chef preparando na hora.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento de macarrão ao vivo"
+    }
+  },
+  {
+    "id": 4,
+    "icon": "🎉",
+    "title": "Festas em Geral",
+    "description": "Aniversários e comemorações",
+    "category": "eventos-sociais",
+    "image": "/assets/images/services/festas.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Festas em Geral 🎉",
+      "text": "Organizamos aniversários e eventos personalizados completos.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento para festa"
+    }
+  },
+  {
+    "id": 5,
+    "icon": "🌽",
+    "title": "Festa Junina",
+    "description": "Comidas típicas e decoração temática",
+    "category": "eventos-tematicos",
+    "image": "/assets/images/services/festa-junina.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Festa Junina 🌽",
+      "text": "Comidas típicas, decoração temática e clima completo de arraial.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento de festa junina"
+    }
+  },
+  {
+    "id": 6,
+    "icon": "🎭",
+    "title": "Carnaval",
+    "description": "Eventos animados e completos",
+    "category": "eventos-tematicos",
+    "image": "/assets/images/services/carnaval.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Carnaval 🎭",
+      "text": "Eventos animados com estrutura completa e equipe especializada.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento de carnaval"
+    }
+  },
+  {
+    "id": 7,
+    "icon": "🍖",
+    "title": "Churrasco",
+    "description": "Equipe e estrutura completa",
+    "category": "gastronomia",
+    "image": "/assets/images/services/churrasco.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Churrasco 🍖",
+      "text": "Equipe profissional com carnes selecionadas e estrutura completa.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento de churrasco"
+    }
+  },
+  {
+    "id": 8,
+    "icon": "🥂",
+    "title": "Finger Food",
+    "description": "Opções sofisticadas e práticas",
+    "category": "gastronomia",
+    "image": "/assets/images/services/finger-food.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Finger Food 🥂",
+      "text": "Opções sofisticadas ideais para eventos modernos.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento de finger food"
+    }
+  },
+  {
+    "id": 9,
+    "icon": "🧑‍🍳",
+    "title": "Garçons",
+    "description": "Equipe profissional para servir",
+    "category": "servicos",
+    "image": "/assets/images/services/garcons.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Garçons 🧑‍🍳",
+      "text": "Equipe treinada para garantir um atendimento impecável.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento de garçons"
+    }
+  },
+  {
+    "id": 10,
+    "icon": "🎈",
+    "title": "Infantil",
+    "description": "Eventos completos para crianças",
+    "category": "eventos-infantis",
+    "image": "/assets/images/services/infantil.jpg",
+    "active": true,
+    "modalContent": {
+      "title": "Eventos Infantis 🎈",
+      "text": "Festas completas com diversão garantida para crianças.",
+      "buttonText": "Pedir orçamento",
+      "whatsapp": "https://wa.me/5516981231479?text=Quero orçamento de festa infantil"
+    }
+  }
+]

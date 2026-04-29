@@ -161,67 +161,14 @@
           Atendemos todos os tipos de eventos com qualidade e profissionalismo
           👇
         </p>
-
-        <div class="services-grid">
-          <div class="service-card" data-modal="casamento">
-            💍
-            <h3>Casamentos</h3>
-            <p>Buffet completo para seu grande dia</p>
-          </div>
-
-          <div class="service-card" data-modal="15anos">
-            👑
-            <h3>15 Anos</h3>
-            <p>Eventos elegantes e inesquecíveis</p>
-          </div>
-
-          <div class="service-card">
-            🍝
-            <h3>Macarrão ao Vivo</h3>
-            <p>Experiência gastronômica na hora</p>
-          </div>
-
-          <div class="service-card">
-            🎉
-            <h3>Festas em Geral</h3>
-            <p>Aniversários e comemorações</p>
-          </div>
-
-          <div class="service-card">
-            🌽
-            <h3>Festa Junina</h3>
-            <p>Comidas típicas e decoração temática</p>
-          </div>
-
-          <div class="service-card">
-            🎭
-            <h3>Carnaval</h3>
-            <p>Eventos animados e completos</p>
-          </div>
-
-          <div class="service-card">
-            🍖
-            <h3>Churrasco</h3>
-            <p>Equipe e estrutura completa</p>
-          </div>
-
-          <div class="service-card">
-            🥂
-            <h3>Finger Food</h3>
-            <p>Opções sofisticadas e práticas</p>
-          </div>
-
-          <div class="service-card">
-            🧑‍🍳
-            <h3>Garçons</h3>
-            <p>Equipe profissional para servir</p>
-          </div>
-
-          <div class="service-card">
-            🎈
-            <h3>Infantil</h3>
-            <p>Eventos completos para crianças</p>
-          </div>
+<div class="filter-buttons">
+  <button onclick="filtrar('todos')">Todos</button>
+  <button onclick="filtrar('eventos-sociais')">Eventos</button>
+  <button onclick="filtrar('gastronomia')">Gastronomia</button>
+  <button onclick="filtrar('eventos-tematicos')">Temáticos</button>
+</div>
+        <div class="services-grid" id="servicesContainer">
+         
         </div>
       </section>
 
@@ -418,27 +365,9 @@
       <img class="lightbox-content" id="lightbox-img" />
     </div>
 
-
-    <div class="modal" id="casamento">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Casamentos 💍</h2>
-    <p>Oferecemos buffet completo, decoração e equipe especializada para tornar seu casamento inesquecível.</p>
-         <a href="https://wa.me/5516981231479?text=Quero orçamento de casamento" class="btn">
-    Pedir orçamento
-    </a>
-  </div>
+<div id="dynamicModal" class="modal">
+  <div class="modal-content" id="modalContent"></div>
 </div>
-
-<div class="modal" id="15anos">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Festa de 15 Anos 👑</h2>
-    <p>Eventos personalizados, cardápio exclusivo e equipe completa.</p>
-        <a href="https://wa.me/5516981231479?text=Quero orçamento de casamento" class="btn">
-    Pedir orçamento
-    </a>
-  </div>
   
 </div>
     <script src="./assets/JS/scripts.js"></script>
