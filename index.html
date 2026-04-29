@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yruu Festa 🎉</title>
+    <link rel="icon" type="image/x-icon" href=" ./assets/imgs/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <style>
+    .swiper {
+      width: 100%;
+      padding: 20px 0 40px;
+    }
+
+    .swiper-slide {
+      width: 260px; /* importante: controla o “card” */
+      height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+.videosSwiper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.videosSwiper .swiper-slide {
+  width: 280px; /* controla quantos aparecem */
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  opacity: 0.4;
+  transform: scale(0.85);
+}
+
+.videosSwiper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* destaque no centro */
+.videosSwiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* laterais */
+.videosSwiper .swiper-slide-next,
+.videosSwiper .swiper-slide-prev {
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+  </style>
+  <body>
+    <div class="app">
+      <!-- NAVBAR -->
+      <div class="navbar">
+        <a href="#servicos">Serviços</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#depoimentos">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <!-- HEADER -->
+      <header>
+        <img src="./assets/imgs/logo.png" alt="Yruu Festa" class="logo" />
+
+        <h1>Yruu Festa 🎉</h1>
+        <p>Buffet completo para seu evento 🍽️</p>
+
+        <a class="btn" href="#contato">📲 Pedir orçamento</a>
+      </header>
+
+      <!-- GALERIA -->
+      <section id="eventos" class="section">
+        <h2>📸 Eventos</h2>
+        <div class="gallery">
+          <img src="./assets/imgs/1.png" />
+          <img src="./assets/imgs/2.png" />
+          <img src="./assets/imgs/3.png" />
+          <img src="./assets/imgs/4.png" />
+          <img src="./assets/imgs/5.png" />
+          <img src="./assets/imgs/6.png" />
+        </div>
+        <h3 style="margin-top: 25px">🎥 Veja nossos eventos em ação</h3>
+
+        <!-- VÍDEOS -->
+        <div class="video-gallery">
+          <video
+            src="./assets/videos/video1.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <video
+            src="./assets/videos/video2.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <video
+            src="./assets/videos/video3.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <video
+            src="./assets/videos/video4.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <video
+            src="./assets/videos/12.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <video
+            src="./assets/videos/13.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        </div>
+      </section>
+      <!-- serviços -->
+      <section id="servicos" class="section">
+        <h2>🎉 Nossos Serviços</h2>
+        <p style="margin-bottom: 20px">
+          Atendemos todos os tipos de eventos com qualidade e profissionalismo
+          👇
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card" data-modal="casamento">
+            💍
+            <h3>Casamentos</h3>
+            <p>Buffet completo para seu grande dia</p>
+          </div>
+
+          <div class="service-card" data-modal="15anos">
+            👑
+            <h3>15 Anos</h3>
+            <p>Eventos elegantes e inesquecíveis</p>
+          </div>
+
+          <div class="service-card">
+            🍝
+            <h3>Macarrão ao Vivo</h3>
+            <p>Experiência gastronômica na hora</p>
+          </div>
+
+          <div class="service-card">
+            🎉
+            <h3>Festas em Geral</h3>
+            <p>Aniversários e comemorações</p>
+          </div>
+
+          <div class="service-card">
+            🌽
+            <h3>Festa Junina</h3>
+            <p>Comidas típicas e decoração temática</p>
+          </div>
+
+          <div class="service-card">
+            🎭
+            <h3>Carnaval</h3>
+            <p>Eventos animados e completos</p>
+          </div>
+
+          <div class="service-card">
+            🍖
+            <h3>Churrasco</h3>
+            <p>Equipe e estrutura completa</p>
+          </div>
+
+          <div class="service-card">
+            🥂
+            <h3>Finger Food</h3>
+            <p>Opções sofisticadas e práticas</p>
+          </div>
+
+          <div class="service-card">
+            🧑‍🍳
+            <h3>Garçons</h3>
+            <p>Equipe profissional para servir</p>
+          </div>
+
+          <div class="service-card">
+            🎈
+            <h3>Infantil</h3>
+            <p>Eventos completos para crianças</p>
+          </div>
+        </div>
+      </section>
+
+<section class="parallax">
+  <div class="parallax-overlay">
+    <h2>Transformamos seu evento em algo inesquecível 🎉</h2>
+    <p>
+      Qualidade, sabor e experiência que marcam momentos especiais.
+    </p>
+
+    <a
+      href="https://wa.me/5516981231479?text=Olá!%20Quero%20um%20orçamento%20para%20evento"
+      class="btn"
+    >
+      Pedir orçamento
+    </a>
+  </div>
+</section>
+
+
+      <!-- DEPOIMENTOS -->
+      <section id="depoimentos" class="section">
+        <h2>⭐ Clientes satisfeitos</h2>
+        <p style="margin-bottom: 20px">
+          Veja o que nossos clientes dizem sobre nossos eventos 👇
+        </p>
+
+        <!-- VÍDEOS -->
+        <div class="swiper videosSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <video
+                src="./assets/videos/1.mp4"
+                autoplay muted loop playsinline preload="auto"
+              ></video>
+            </div>
+
+            <div class="swiper-slide">
+              <video
+                src="./assets/videos/2.mp4"
+                autoplay muted loop playsinline preload="auto"
+              ></video>
+            </div>
+            <div class="swiper-slide">
+              <video
+                src="./assets/videos/5.mp4"
+                autoplay muted loop playsinline preload="auto"
+              ></video>
+            </div>
+            <div class="swiper-slide">
+              <video
+                src="./assets/videos/6.mp4"
+                autoplay muted loop playsinline preload="auto"
+              ></video>
+            </div>
+            <div class="swiper-slide">
+              <video
+                src="./assets/videos/7.mp4"
+               autoplay muted loop playsinline preload="auto"
+              ></video>
+            </div>
+            <div class="swiper-slide">
+              <video
+                src="./assets/videos/8.mp4"
+             autoplay muted loop playsinline preload="auto"
+              ></video>
+            </div>
+            <div class="swiper-slide">
+              <video
+                src="./assets/videos/9.mp4"
+                autoplay muted loop playsinline preload="auto"
+              ></video>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/imgs/6.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/7.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/9.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/10.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/11.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/14.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/15.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/imgs/16.png" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- TEXTO -->
+        <!-- <div class="testimonial">
+          <p>"Atendimento incrível e comida perfeita! Super recomendo."</p>
+          <strong>- Cliente satisfeito</strong>
+        </div>
+
+        <div class="testimonial">
+          <p>"Meu evento foi um sucesso graças a vocês!"</p>
+          <strong>- Cliente satisfeito</strong>
+        </div> -->
+      </section>
+      <!-- CONTATO -->
+      <section id="contato" class="section">
+        <h2>🔥 Reserve sua data</h2>
+
+        <a
+          class="btn"
+          href="https://wa.me/5516981231479?text=Quero%20orçamento%20para%20evento"
+        >
+          📲 Falar no WhatsApp
+        </a>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- COLUNA 1 - MARCA -->
+          <div class="footer-col">
+            <h2 class="footer-logo">Yruu Festa 🎉</h2>
+            <p>
+              Transformamos eventos em experiências inesquecíveis com qualidade,
+              sabor e profissionalismo.
+            </p>
+          </div>
+
+          <!-- COLUNA 2 - LINKS -->
+          <div class="footer-col">
+            <h3>Links rápidos</h3>
+            <ul>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#eventos">Eventos</a></li>
+              <li><a href="#depoimentos">Avaliações</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- COLUNA 3 - CONTATO -->
+          <div class="footer-col">
+            <h3>Contato</h3>
+            <p>📍 Ribeirão Preto - SP</p>
+            <p>📞 (16) 98123-1479</p>
+            <p>📸 @yruufesta</p>
+          </div>
+
+          <!-- COLUNA 4 - CTA -->
+          <div class="footer-col">
+            <h3>Faça seu evento</h3>
+            <p>Garanta sua data agora mesmo.</p>
+            <a
+              href="https://wa.me/5516981231479?text=Quero%20orçamento%20para%20evento"
+              class="footer-btn"
+            >
+              Pedir orçamento
+            </a>
+          </div>
+        </div>
+
+        <!-- LINHA FINAL -->
+        <div class="footer-bottom">
+          <p>© 2026 Yruu Festa - Todos os direitos reservados</p>
+        </div>
+      </footer>
+    </div>
+    <a
+      href="https://wa.me/5516981231479?text=Olá!%20Quero%20um%20orçamento%20para%20evento.%20Pode%20me%20ajudar?"
+      class="chat-btn"
+      target="_blank"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+    </div>
+
+
+    <div class="modal" id="casamento">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Casamentos 💍</h2>
+    <p>Oferecemos buffet completo, decoração e equipe especializada para tornar seu casamento inesquecível.</p>
+         <a href="https://wa.me/5516981231479?text=Quero orçamento de casamento" class="btn">
+    Pedir orçamento
+    </a>
+  </div>
+</div>
+
+<div class="modal" id="15anos">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Festa de 15 Anos 👑</h2>
+    <p>Eventos personalizados, cardápio exclusivo e equipe completa.</p>
+        <a href="https://wa.me/5516981231479?text=Quero orçamento de casamento" class="btn">
+    Pedir orçamento
+    </a>
+  </div>
+  
+</div>
+    <script src="./assets/JS/scripts.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        loop: true,
+        coverflowEffect: {
+          rotate: 40,
+          stretch: 0,
+          depth: 120,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+var videosSwiper = new Swiper(".videosSwiper", {
+  slidesPerView: 2, 
+  spaceBetween: 15,
+  centeredSlides: true,
+  loop: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".videosSwiper .swiper-pagination",
+    clickable: true,
+  },
+
+  on: {
+    init: function () {
+      document.querySelectorAll(".videosSwiper video").forEach((video) => {
+        video.play();
+      });
+    },
+  },
+});
+    </script>
+  </body>
+</html>
