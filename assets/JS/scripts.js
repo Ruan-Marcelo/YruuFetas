@@ -47,10 +47,6 @@ function renderServices(data) {
 
       card.dataset.category = service.category;
 
-      card.style.backgroundImage = `url(${service.image})`;
-      card.style.backgroundSize = "cover";
-      card.style.backgroundPosition = "center";
-
       card.innerHTML = `
         <div class="card-overlay">
           <span class="icon">${service.icon}</span>
