@@ -614,7 +614,7 @@
       });
 
       var videosSwiper = new Swiper(".videosSwiper", {
-        slidesPerView: 2,
+        slidesPerView: 1.15,
         spaceBetween: 15,
         centeredSlides: true,
         loop: true,
@@ -627,6 +627,17 @@
         pagination: {
           el: ".videosSwiper .swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          480: {
+            slidesPerView: 1.35,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 2.4,
+          },
         },
 
         on: {

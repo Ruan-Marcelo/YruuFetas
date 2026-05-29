@@ -9,6 +9,16 @@ body {
   display: flex;
   justify-content: center;
   touch-action: manipulation;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
 }
 
 /* APP CENTRAL */
@@ -32,20 +42,23 @@ h3 {
   top: 0;
   backdrop-filter: blur(12px);
   background: rgba(13, 59, 102, 0.85);
-  padding: 15px 20px;
+  padding: 12px max(12px, env(safe-area-inset-left)) 12px
+    max(12px, env(safe-area-inset-right));
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: clamp(10px, 3vw, 30px);
+  flex-wrap: wrap;
   z-index: 1000;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: clamp(12px, 2.8vw, 14px);
   font-weight: 500;
   position: relative;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 /* underline animado */
@@ -72,7 +85,7 @@ h3 {
 header {
   background: linear-gradient(135deg, #0d3b66, #1e5fa8);
   color: white;
-  padding: 80px 20px;
+  padding: clamp(42px, 9vw, 80px) 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -119,13 +132,15 @@ header * {
 }
 
 header h1 {
-  font-size: 34px;
+  font-size: clamp(28px, 7vw, 42px);
   margin: 10px 0;
 }
 
 header p {
-  font-size: 17px;
+  font-size: clamp(15px, 3.5vw, 18px);
   opacity: 0.9;
+  max-width: 680px;
+  margin: 0 auto;
 }
 /* SEÇÕES */
 .section {
@@ -137,7 +152,7 @@ header p {
  .btn {
   display: inline-block;
   margin-top: 25px;
-  padding: 15px 30px;
+  padding: 14px clamp(18px, 5vw, 30px);
   background: #ffcc00;
   color: #0d3b66;
   text-decoration: none;
@@ -145,6 +160,8 @@ header p {
   font-weight: bold;
   transition: 0.3s;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  text-align: center;
 }
 
 header .btn:hover {
@@ -156,6 +173,7 @@ header .btn:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  width: 100%;
 }
 
 .gallery img {
@@ -306,6 +324,7 @@ header .btn:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   margin-top: 20px;
+  align-items: stretch;
 }
 .section h2 {
   margin-bottom: 10px;
@@ -317,6 +336,7 @@ header .btn:hover {
 }
 /* CARD */
 .service-card {
+  min-height: 190px;
   padding: 20px 15px;
   border-radius: 16px;
   text-align: center;
@@ -325,6 +345,8 @@ header .btn:hover {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: stretch;
 }
 
 /* linha superior premium */
@@ -381,6 +403,11 @@ header .btn:hover {
   position: relative;
   z-index: 2;
   color: white;
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .video-gallery {
@@ -392,6 +419,8 @@ header .btn:hover {
 
 .video-gallery video {
   width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
   border-radius: 12px;
 }
 /* VÍDEOS */
@@ -511,7 +540,7 @@ header .btn:hover {
 }
 
 .parallax {
-  height: 400px;
+  min-height: 360px;
   background-image: url("../imgs/20.png"); 
   background-attachment: fixed;
   background-position: center;
@@ -604,6 +633,7 @@ header .btn:hover {
   margin-bottom: 20px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filter-buttons button {
@@ -613,9 +643,131 @@ header .btn:hover {
   background: #eee;
   cursor: pointer;
   transition: 0.3s;
+  min-height: 40px;
 }
 
 .filter-buttons button:hover {
   background: #0d3b66;
   color: white;
+}
+
+@media (max-width: 767px) {
+  .app {
+    box-shadow: none;
+  }
+
+  .section {
+    padding: 28px 14px;
+  }
+
+  .logo {
+    width: 112px;
+    height: 112px;
+  }
+
+  .services-grid {
+    gap: 12px;
+  }
+
+  .service-card {
+    min-height: 176px;
+    padding: 18px 12px;
+  }
+
+  .service-card h3 {
+    font-size: 15px;
+  }
+
+  .service-card p {
+    font-size: 12px;
+  }
+
+  .video-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .videosSwiper {
+    width: min(100%, 360px);
+  }
+
+  .videosSwiper .swiper-slide {
+    width: 76vw;
+    max-width: 310px;
+    height: auto;
+    aspect-ratio: 9 / 16;
+  }
+
+  .swiper-slide {
+    width: min(72vw, 260px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .parallax {
+    min-height: 330px;
+    background-attachment: scroll;
+  }
+
+  .parallax-overlay h2 {
+    font-size: 23px;
+  }
+
+  .chat-btn {
+    width: 54px;
+    height: 54px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .modal-content {
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .gallery,
+  .services-grid,
+  .video-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .service-card {
+    min-height: 170px;
+  }
+
+  .filter-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filter-buttons button {
+    width: 100%;
+  }
+
+  .footer {
+    padding-bottom: 72px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar {
+    gap: 8px;
+  }
+
+  .navbar a {
+    font-size: 11px;
+  }
+
+  .filter-buttons {
+    grid-template-columns: 1fr;
+  }
 }
