@@ -571,15 +571,93 @@
         </div>
       </footer>
     </div>
-    <a
-      href="https://wa.me/5516981231479?text=Olá!%20Quero%20um%20orçamento%20para%20evento.%20Pode%20me%20ajudar?"
+    <button
+      type="button"
       class="chat-btn"
-      target="_blank"
-      rel="noopener noreferrer"
+      id="openChatbot"
       aria-label="Falar com a Yruu Festa pelo WhatsApp"
     >
       <i class="bi bi-whatsapp"></i>
-    </a>
+    </button>
+
+    <div class="chatbot" id="chatbot" aria-hidden="true">
+      <div class="chatbot-window" role="dialog" aria-labelledby="chatbotTitle">
+        <div class="chatbot-header">
+          <div>
+            <strong id="chatbotTitle">Monte seu orçamento</strong>
+            <span>Yruu Festa responde pelo WhatsApp</span>
+          </div>
+          <button type="button" id="closeChatbot" aria-label="Fechar chat">
+            &times;
+          </button>
+        </div>
+
+        <form class="chatbot-form" id="chatbotForm">
+          <label>
+            Tipo de festa
+            <select name="tipo" required>
+              <option value="">Selecione</option>
+              <option>Casamento</option>
+              <option>15 anos</option>
+              <option>Aniversário</option>
+              <option>Festa infantil</option>
+              <option>Evento corporativo</option>
+              <option>Festa junina</option>
+              <option>Carnaval</option>
+              <option>Outro evento</option>
+            </select>
+          </label>
+
+          <div class="chatbot-grid">
+            <label>
+              Data
+              <input type="date" name="data" />
+            </label>
+            <label>
+              Convidados
+              <input
+                type="number"
+                name="convidados"
+                min="1"
+                inputmode="numeric"
+                placeholder="Ex: 80"
+              />
+            </label>
+          </div>
+
+          <fieldset>
+            <legend>Buffet desejado</legend>
+            <label><input type="checkbox" name="buffet" value="Churrasco" /> Churrasco</label>
+            <label><input type="checkbox" name="buffet" value="Finger food" /> Finger food</label>
+            <label><input type="checkbox" name="buffet" value="Macarrão ao vivo" /> Macarrão ao vivo</label>
+            <label><input type="checkbox" name="buffet" value="Comidas típicas" /> Comidas típicas</label>
+            <label><input type="checkbox" name="buffet" value="Doces e sobremesas" /> Doces e sobremesas</label>
+            <label><input type="checkbox" name="buffet" value="Bebidas" /> Bebidas</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Estrutura da festa</legend>
+            <label><input type="checkbox" name="estrutura" value="Garçons" /> Garçons</label>
+            <label><input type="checkbox" name="estrutura" value="Decoração" /> Decoração</label>
+            <label><input type="checkbox" name="estrutura" value="Mesa posta" /> Mesa posta</label>
+            <label><input type="checkbox" name="estrutura" value="Equipe completa" /> Equipe completa</label>
+          </fieldset>
+
+          <label>
+            O que mais você quer na festa?
+            <textarea
+              name="observacoes"
+              rows="3"
+              placeholder="Conte detalhes do cardápio, tema, local ou horários."
+            ></textarea>
+          </label>
+
+          <button type="submit" class="chatbot-submit">
+            Enviar orçamento no WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
     <div id="lightbox" class="lightbox">
       <span class="close">&times;</span>
       <img class="lightbox-content" id="lightbox-img" />

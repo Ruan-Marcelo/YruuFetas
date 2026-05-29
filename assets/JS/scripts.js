@@ -114,3 +114,59 @@ function filtrar(categoria) {
     renderServices(filtrados);
   }
 }
+
+// ==========================
+// CHATBOT WHATSAPP
+// ==========================
+const chatbot = document.getElementById("chatbot");
+const openChatbot = document.getElementById("openChatbot");
+const closeChatbot = document.getElementById("closeChatbot");
+const chatbotForm = document.getElementById("chatbotForm");
+
+function toggleChatbot(show) {
+  chatbot.classList.toggle("show", show);
+  chatbot.setAttribute("aria-hidden", String(!show));
+}
+
+function formatDate(dateValue) {
+  if (!dateValue) return "A definir";
+
+  const [year, month, day] = dateValue.split("-");
+  return `${day}/${month}/${year}`;
+}
+
+function getCheckedValues(formData, name) {
+  const values = formData.getAll(name).filter(Boolean);
+  return values.length ? values.join(", ") : "A definir";
+}
+
+openChatbot.addEventListener("click", () => toggleChatbot(true));
+closeChatbot.addEventListener("click", () => toggleChatbot(false));
+
+chatbot.addEventListener("click", (event) => {
+  if (event.target === chatbot) {
+    toggleChatbot(false);
+  }
+});
+
+chatbotForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(chatbotForm);
+  const message = [
+    "Olá! Quero um orçamento para evento pela Yruu Festa.",
+    "",
+    `Tipo de festa: ${formData.get("tipo")}`,
+    `Data: ${formatDate(formData.get("data"))}`,
+    `Convidados: ${formData.get("convidados") || "A definir"}`,
+    `Buffet desejado: ${getCheckedValues(formData, "buffet")}`,
+    `Estrutura: ${getCheckedValues(formData, "estrutura")}`,
+    `Observações: ${formData.get("observacoes") || "Nenhuma observação extra"}`,
+  ].join("\n");
+
+  const whatsappUrl = `https://wa.me/5516981231479?text=${encodeURIComponent(
+    message
+  )}`;
+
+  window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+});
