@@ -5,7 +5,7 @@
     "title": "Casamentos",
     "description": "Buffet completo para seu grande dia",
     "category": "eventos-sociais",
-    "image": "/assets/images/services/casamentos.jpg",
+    "image": "./assets/imgs/1.png",
     "active": true,
     "modalContent": {
       "title": "Casamentos 💍",
@@ -20,7 +20,7 @@
     "title": "15 Anos",
     "description": "Eventos elegantes e inesquecíveis",
     "category": "eventos-sociais",
-    "image": "/assets/images/services/15-anos.jpg",
+    "image": "./assets/imgs/2.png",
     "active": true,
     "modalContent": {
       "title": "Festa de 15 Anos 👑",
@@ -35,7 +35,7 @@
     "title": "Macarrão ao Vivo",
     "description": "Experiência gastronômica na hora",
     "category": "gastronomia",
-    "image": "/assets/images/services/macarrao.jpg",
+    "image": "./assets/imgs/3.png",
     "active": true,
     "modalContent": {
       "title": "Macarrão ao Vivo 🍝",
@@ -50,7 +50,7 @@
     "title": "Festas em Geral",
     "description": "Aniversários e comemorações",
     "category": "eventos-sociais",
-    "image": "/assets/images/services/festas.jpg",
+    "image": "./assets/imgs/4.png",
     "active": true,
     "modalContent": {
       "title": "Festas em Geral 🎉",
@@ -65,7 +65,7 @@
     "title": "Festa Junina",
     "description": "Comidas típicas e decoração temática",
     "category": "eventos-tematicos",
-    "image": "/assets/images/services/festa-junina.jpg",
+    "image": "./assets/imgs/5.png",
     "active": true,
     "modalContent": {
       "title": "Festa Junina 🌽",
@@ -80,7 +80,7 @@
     "title": "Carnaval",
     "description": "Eventos animados e completos",
     "category": "eventos-tematicos",
-    "image": "/assets/images/services/carnaval.jpg",
+    "image": "./assets/imgs/20.png",
     "active": true,
     "modalContent": {
       "title": "Carnaval 🎭",
@@ -95,7 +95,7 @@
     "title": "Churrasco",
     "description": "Equipe e estrutura completa",
     "category": "gastronomia",
-    "image": "/assets/images/services/churrasco.jpg",
+    "image": "./assets/imgs/10.png",
     "active": true,
     "modalContent": {
       "title": "Churrasco 🍖",
@@ -110,7 +110,7 @@
     "title": "Finger Food",
     "description": "Opções sofisticadas e práticas",
     "category": "gastronomia",
-    "image": "/assets/images/services/finger-food.jpg",
+    "image": "./assets/imgs/11.png",
     "active": true,
     "modalContent": {
       "title": "Finger Food 🥂",
@@ -125,7 +125,7 @@
     "title": "Garçons",
     "description": "Equipe profissional para servir",
     "category": "servicos",
-    "image": "/assets/images/services/garcons.jpg",
+    "image": "./assets/imgs/14.png",
     "active": true,
     "modalContent": {
       "title": "Garçons 🧑‍🍳",
@@ -140,7 +140,7 @@
     "title": "Infantil",
     "description": "Eventos completos para crianças",
     "category": "eventos-infantis",
-    "image": "/assets/images/services/infantil.jpg",
+    "image": "./assets/imgs/15.png",
     "active": true,
     "modalContent": {
       "title": "Eventos Infantis 🎈",
