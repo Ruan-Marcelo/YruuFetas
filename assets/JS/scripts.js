@@ -75,7 +75,7 @@ function abrirModal(service) {
     <span class="close">&times;</span>
     <h2>${service.modalContent.title}</h2>
     <p>${service.modalContent.text}</p>
-    <a href="${service.modalContent.whatsapp}" class="btn">
+    <a href="${service.modalContent.whatsapp}" class="btn" target="_blank" rel="noopener noreferrer">
       ${service.modalContent.buttonText}
     </a>
   `;
@@ -109,6 +109,40 @@ function filtrar(categoria) {
     );
     renderServices(filtrados);
   }
+}
+
+// ==========================
+// VÍDEOS SOB DEMANDA
+// ==========================
+const lazyVideos = document.querySelectorAll("video[data-src]");
+
+function loadVideo(video) {
+  if (video.src) return;
+
+  video.src = video.dataset.src;
+  video.load();
+
+  if (video.autoplay) {
+    video.play().catch(() => {});
+  }
+}
+
+if ("IntersectionObserver" in window) {
+  const videoObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          loadVideo(entry.target);
+          videoObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "250px 0px" }
+  );
+
+  lazyVideos.forEach((video) => videoObserver.observe(video));
+} else {
+  lazyVideos.forEach(loadVideo);
 }
 
 // ==========================
@@ -152,9 +186,13 @@ chatbotForm.addEventListener("submit", (event) => {
   const message = [
     "Olá! Quero um orçamento para evento pela Yruu Festa.",
     "",
+    `Nome: ${formData.get("nome") || "Não informado"}`,
     `Tipo de festa: ${formData.get("tipo")}`,
     `Data: ${formatDate(formData.get("data"))}`,
+    `Horário: ${formData.get("horario") || "A definir"}`,
     `Convidados: ${formData.get("convidados") || "A definir"}`,
+    `Cidade/bairro: ${formData.get("localizacao") || "A definir"}`,
+    `Local do evento: ${formData.get("local") || "A definir"}`,
     `Buffet desejado: ${getCheckedValues(formData, "buffet")}`,
     `Estrutura: ${getCheckedValues(formData, "estrutura")}`,
     `Observações: ${formData.get("observacoes") || "Nenhuma observação extra"}`,

@@ -18,6 +18,9 @@
     <link rel="canonical" href="https://www.yruufesta.shop/" />
     <link rel="icon" type="image/png" href="./assets/imgs/logo.png" />
     <link rel="apple-touch-icon" href="./assets/imgs/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:type" content="business.business" />
     <meta property="og:site_name" content="Yruu Festa" />
@@ -107,6 +110,38 @@
         ]
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "A Yruu Festa atende Ribeirão Preto e região?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. A Yruu Festa atende eventos em Ribeirão Preto e região."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais tipos de evento a Yruu Festa faz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Atendemos casamentos, aniversários, festas infantis, eventos corporativos, festas temáticas e comemorações em geral."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como pedir orçamento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use o botão de WhatsApp ou o assistente de orçamento do site para enviar os detalhes do evento."
+            }
+          }
+        ]
+      }
+    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -184,6 +219,7 @@
         <a href="#servicos">Serviços</a>
         <a href="#eventos">Eventos</a>
         <a href="#depoimentos">Avaliações</a>
+        <a href="#duvidas">Dúvidas</a>
         <a href="#contato">Contato</a>
       </div>
 
@@ -251,51 +287,57 @@
         <!-- VÍDEOS -->
         <div class="video-gallery">
           <video
-            src="./assets/videos/video1.mp4"
+            data-src="./assets/videos/video1.mp4"
             autoplay
             muted
             loop
             playsinline
+            preload="metadata"
             aria-label="Vídeo de evento realizado pela Yruu Festa"
           ></video>
           <video
-            src="./assets/videos/video2.mp4"
+            data-src="./assets/videos/video2.mp4"
             autoplay
             muted
             loop
             playsinline
+            preload="metadata"
             aria-label="Vídeo de buffet em ação durante evento"
           ></video>
           <video
-            src="./assets/videos/video3.mp4"
+            data-src="./assets/videos/video3.mp4"
             autoplay
             muted
             loop
             playsinline
+            preload="metadata"
             aria-label="Vídeo de comemoração atendida pela Yruu Festa"
           ></video>
           <video
-            src="./assets/videos/video4.mp4"
+            data-src="./assets/videos/video4.mp4"
             autoplay
             muted
             loop
             playsinline
+            preload="metadata"
             aria-label="Vídeo de estrutura de evento e buffet"
           ></video>
           <video
-            src="./assets/videos/12.mp4"
+            data-src="./assets/videos/12.mp4"
             autoplay
             muted
             loop
             playsinline
+            preload="metadata"
             aria-label="Vídeo de evento social com buffet profissional"
           ></video>
           <video
-            src="./assets/videos/13.mp4"
+            data-src="./assets/videos/13.mp4"
             autoplay
             muted
             loop
             playsinline
+            preload="metadata"
             aria-label="Vídeo de festa realizada pela Yruu Festa"
           ></video>
         </div>
@@ -344,79 +386,79 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <video
-                src="./assets/videos/1.mp4"
+                data-src="./assets/videos/1.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
-                preload="auto"
+                preload="metadata"
                 aria-label="Depoimento em vídeo de cliente da Yruu Festa"
               ></video>
             </div>
 
             <div class="swiper-slide">
               <video
-                src="./assets/videos/2.mp4"
+                data-src="./assets/videos/2.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
-                preload="auto"
+                preload="metadata"
                 aria-label="Avaliação em vídeo de cliente satisfeito"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
-                src="./assets/videos/5.mp4"
+                data-src="./assets/videos/5.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
-                preload="auto"
+                preload="metadata"
                 aria-label="Depoimento de evento realizado pela Yruu Festa"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
-                src="./assets/videos/6.mp4"
+                data-src="./assets/videos/6.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
-                preload="auto"
+                preload="metadata"
                 aria-label="Vídeo de cliente recomendando a Yruu Festa"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
-                src="./assets/videos/7.mp4"
+                data-src="./assets/videos/7.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
-                preload="auto"
+                preload="metadata"
                 aria-label="Avaliação de buffet para evento"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
-                src="./assets/videos/8.mp4"
+                data-src="./assets/videos/8.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
-                preload="auto"
+                preload="metadata"
                 aria-label="Depoimento sobre atendimento em evento"
               ></video>
             </div>
             <div class="swiper-slide">
               <video
-                src="./assets/videos/9.mp4"
+                data-src="./assets/videos/9.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
-                preload="auto"
+                preload="metadata"
                 aria-label="Cliente satisfeito falando sobre evento"
               ></video>
             </div>
@@ -506,6 +548,23 @@
           <strong>- Cliente satisfeito</strong>
         </div> -->
       </section>
+      <section id="duvidas" class="section faq-section">
+        <h2>Dúvidas rápidas</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Atendem Ribeirão Preto e região?</summary>
+            <p>Sim, atendemos Ribeirão Preto e cidades próximas.</p>
+          </details>
+          <details>
+            <summary>Fazem quais tipos de evento?</summary>
+            <p>Casamentos, aniversários, festas infantis, corporativos e temáticos.</p>
+          </details>
+          <details>
+            <summary>Como pedir orçamento?</summary>
+            <p>Use o assistente no botão do WhatsApp e envie os detalhes do evento.</p>
+          </details>
+        </div>
+      </section>
       <!-- CONTATO -->
       <section id="contato" class="section">
         <h2>🔥 Reserve sua data</h2>
@@ -538,6 +597,7 @@
               <li><a href="#servicos">Serviços</a></li>
               <li><a href="#eventos">Eventos</a></li>
               <li><a href="#depoimentos">Avaliações</a></li>
+              <li><a href="#duvidas">Dúvidas</a></li>
               <li><a href="#contato">Contato</a></li>
             </ul>
           </div>
@@ -546,8 +606,20 @@
           <div class="footer-col">
             <h3>Contato</h3>
             <p>📍 Ribeirão Preto - SP</p>
-            <p>📞 (16) 98123-1479</p>
-            <p>📸 Instagram: @yruufesta</p>
+            <p>
+              📞
+              <a href="tel:+5516981231479">(16) 98123-1479</a>
+            </p>
+            <p>
+              📸
+              <a
+                href="https://www.instagram.com/yruufesta/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @yruufesta
+              </a>
+            </p>
           </div>
 
           <!-- COLUNA 4 - CTA -->
@@ -594,6 +666,11 @@
 
         <form class="chatbot-form" id="chatbotForm">
           <label>
+            Seu nome
+            <input name="nome" autocomplete="name" placeholder="Ex: Ana" />
+          </label>
+
+          <label>
             Tipo de festa
             <select name="tipo" required>
               <option value="">Selecione</option>
@@ -624,6 +701,28 @@
               />
             </label>
           </div>
+
+          <div class="chatbot-grid">
+            <label>
+              Horário
+              <input type="time" name="horario" />
+            </label>
+            <label>
+              Cidade/bairro
+              <input name="localizacao" placeholder="Ex: Ribeirão Preto" />
+            </label>
+          </div>
+
+          <label>
+            Local do evento
+            <select name="local">
+              <option value="">Selecione</option>
+              <option>Já tenho salão/local</option>
+              <option>Será em casa/chácara</option>
+              <option>Ainda estou procurando local</option>
+              <option>Quero ajuda com estrutura</option>
+            </select>
+          </label>
 
           <fieldset>
             <legend>Buffet desejado</legend>
@@ -723,7 +822,9 @@
             document
               .querySelectorAll(".videosSwiper video")
               .forEach((video) => {
-                video.play();
+                if (video.src) {
+                  video.play();
+                }
               });
           },
         },

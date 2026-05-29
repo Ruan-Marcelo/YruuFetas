@@ -291,7 +291,10 @@ header .btn:hover {
 
 .chatbot-form select,
 .chatbot-form input[type="date"],
+.chatbot-form input[type="time"],
 .chatbot-form input[type="number"],
+.chatbot-form input[name="nome"],
+.chatbot-form input[name="localizacao"],
 .chatbot-form textarea {
   width: 100%;
   margin-top: 6px;
@@ -301,6 +304,37 @@ header .btn:hover {
   font: inherit;
   color: #08223a;
   background: #fff;
+}
+
+.faq-section {
+  max-width: 860px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 10px;
+  margin: 20px auto 0;
+  text-align: left;
+}
+
+.faq-list details {
+  background: white;
+  border: 1px solid rgba(13, 59, 102, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(13, 59, 102, 0.07);
+  overflow: hidden;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  color: #0d3b66;
+  font-weight: 700;
+  padding: 15px 16px;
+}
+
+.faq-list p {
+  margin: 0;
+  padding: 0 16px 16px;
 }
 
 .chatbot-grid {
